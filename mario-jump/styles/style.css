@@ -29,6 +29,7 @@
   position: absolute;
   width: 80px;
   bottom: 0;
+  /* left: 300px; */
   animation: pipe-animation 2s infinite linear;
 }
 

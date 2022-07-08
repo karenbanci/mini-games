@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.game-board{
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid #007A05;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87CEEB, #E0F6FF)
+}
+
+.mario {
+  bottom: 0;
+  width: 150px;
+  position: absolute;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+.pipe{
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  animation: pipe-animation 2s infinite linear;
+}
+
+.clouds {
+  position: absolute;
+  width: 300px;
+  margin-top: 30px;
+  animation: clouds-animation 20s infinite linear;
+}
+
+.plant {
+  position: absolute;
+  bottom: -1px;
+  width: 300px;
+  animation: plants-animation 10s infinite linear;
+}
+
+
+.score{
+  position: absolute;
+  margin-top: 15px;
+  width: 95%;
+  display: flex;
+  margin-right: 35px;
+  justify-content: flex-end;
+}
+
+h2 {
+  font-size: 12px;
+}
+
+.game-over-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-over {
+  font-size: 45px;
+  animation: game-over-animation 2s infinite linear;
+  display: none;
+}
+
+.btn-reset {
+  background-color: #ea2525;
+  width: 95px;
+  height: 25px;
+  border-radius: 10%;
+  border: 1px solid #ea2525;
+  box-shadow: 1px 1px 2px #070707;
+  margin-top: 10px;
+  font-size: 10px;
+  color: #fff;
+  display: none;
+}
+
+.btn-reset:hover{
+  background-color: #39a628;
+  border: 1px solid #39a628;
+}
+
+footer {
+  width: 100%;
+  height: 240px;
+  background-color: #007A05;
+  display: flex;
+  justify-content: center;
+}
+.developed{
+  padding: 10px 20px;
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 180px;
+  }
+
+  50% {
+    bottom: 180px;
+
+  }
+
+  60% {
+    bottom: 180px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes plants-animation {
+  from {
+    right: -550px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+ @keyframes game-over-animation {
+   0%{
+     opacity: 0;
+   }
+   50%{
+     opacity: 0.7;
+   }
+   100%{
+     opacity: 0;
+   }
+ }

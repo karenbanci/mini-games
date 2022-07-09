@@ -90,7 +90,7 @@ h2 {
   font-size: 10px;
   color: #fff;
   display: none;
-  z-index: 1;
+  z-index: 3;
 }
 
 .btn-reset:hover{

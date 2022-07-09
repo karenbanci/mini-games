@@ -5,11 +5,11 @@ const score = document.querySelector(".score-count");
 const gameOver = document.querySelector(".game-over");
 const reset = document.querySelector(".btn-reset");
 
-const jump = () => {
+const jump = (e) => {
   mario.classList.add('jump');
-  console.log(jump);
+  console.log('jump');
 
-  console.log(mario);
+  console.log(e);
 
   setTimeout(() => {
     mario.classList.remove('jump');
@@ -28,7 +28,7 @@ const loop = setInterval(() => {
 
   if (pipePosition > 0) {
     count += 15;
-    console.log(count);
+    // console.log(count);
     score.innerHTML = `Score: ${count}`;
   }
 

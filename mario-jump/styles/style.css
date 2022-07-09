@@ -104,13 +104,24 @@ footer {
   display: flex;
   justify-content: center;
 }
-.developed{
-  padding: 10px 20px;
 
-}
 a{
   text-decoration: none;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+  .pipe{
+    animation: pipe-animation 0.8s infinite linear;
+  }
+
+  .plant {
+  animation: plants-animation 5s infinite linear;
+  }
+
+  .clouds {
+  animation: clouds-animation 10s infinite linear;
+  }
 }
 
 @keyframes pipe-animation {

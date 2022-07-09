@@ -45,6 +45,7 @@
   bottom: -1px;
   width: 300px;
   animation: plants-animation 10s infinite linear;
+  z-index: 0;
 }
 
 
@@ -89,6 +90,7 @@ h2 {
   font-size: 10px;
   color: #fff;
   display: none;
+  z-index: 1;
 }
 
 .btn-reset:hover{

@@ -122,6 +122,12 @@ a{
   .clouds {
   animation: clouds-animation 10s infinite linear;
   }
+
+  .btn-reset {
+  width: 160px;
+  height: 40px;
+  font-size: 20px;
+  }
 }
 
 @keyframes pipe-animation {

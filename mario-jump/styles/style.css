@@ -94,6 +94,7 @@ h2 {
 .btn-reset:hover{
   background-color: #39a628;
   border: 1px solid #39a628;
+  cursor: pointer;
 }
 
 footer {

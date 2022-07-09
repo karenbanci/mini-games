@@ -64,4 +64,5 @@ const resetGame = () => {
 }
 
 document.addEventListener('keydown', jump);
-document.addEventListener('onclick', resetGame)
+document.addEventListener("touchstart", jump);
+document.addEventListener("mousedown", jump);

@@ -75,6 +75,7 @@ h2 {
   font-size: 45px;
   animation: game-over-animation 2s infinite linear;
   display: none;
+  width: min-content;
 }
 
 .btn-reset {
